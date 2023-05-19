@@ -13,7 +13,9 @@ import salesRoutes from "./routes/sales.js";
 //? DATA IMPORTS
 
 import User from "./models/User.js";
-import { dataUser } from "./data/index.js";
+import { dataUser, dataProduct, dataProductStat } from "./data/index.js";
+import Product from "./models/Product.js";
+import ProductStat from "./models/ProductStat.js";
 
 //! CONFIGURATION
 
@@ -46,5 +48,7 @@ mongoose
     console.log("MongoDB Connected Succesfully");
     //! I use this to add data one time in DB
     // User.insertMany(dataUser);
+    // Product.insertMany(dataProduct);
+    // Product.insertMany(dataProductStat);
   })
   .catch((err) => console.log(`${err} did not connect`));
