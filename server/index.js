@@ -42,9 +42,9 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
-    console.log("MongoDB Connected Succesfully");
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
-    //! Only add data one time
-    User.insertMany(dataUser);
+    console.log("MongoDB Connected Succesfully");
+    //! I use this to add data one time in DB
+    // User.insertMany(dataUser);
   })
   .catch((err) => console.log(`${err} did not connect`));
