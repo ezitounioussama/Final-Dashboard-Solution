@@ -13,9 +13,9 @@ import salesRoutes from "./routes/sales.js";
 //? DATA IMPORTS
 
 import User from "./models/User.js";
-import { dataUser, dataProduct, dataProductStat } from "./data/index.js";
 import Product from "./models/Product.js";
 import ProductStat from "./models/ProductStat.js";
+import { dataUser, dataProduct, dataProductStat } from "./data/index.js";
 
 //! CONFIGURATION
 
@@ -47,8 +47,8 @@ mongoose
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
     console.log("MongoDB Connected Succesfully");
     //! I use this to add data one time in DB
-    // User.insertMany(dataUser);
     // Product.insertMany(dataProduct);
-    // Product.insertMany(dataProductStat);
+    // ProductStat.insertMany(dataProductStat);
+    // User.insertMany(dataUser);
   })
   .catch((err) => console.log(`${err} did not connect`));
