@@ -1,7 +1,7 @@
 import React from "react";
 import {
   Box,
-  Divider,
+  // Divider,
   Drawer,
   IconButton,
   List,
@@ -13,7 +13,7 @@ import {
   useTheme,
 } from "@mui/material";
 import {
-  SettingsOutlined,
+  // SettingsOutlined,
   ChevronLeft,
   ChevronRightOutlined,
   HomeOutlined,
@@ -31,7 +31,7 @@ import {
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import FlexBetween from "./FlexBetween";
-import profileImage from "assets/profile.jpg";
+// import profileImage from "assets/profile.jpg";
 
 const navItems = [
   {
@@ -132,7 +132,7 @@ const Sidebar = ({
               <FlexBetween color={theme.palette.secondary.main}>
                 <Box display="flex" alignItems="center" gap="0.5rem">
                   <Typography variant="h4" fontWeight="bold">
-                    ECOMVISION
+                    MOMENTUMDASH
                   </Typography>
                 </Box>
                 {!isNonMobile && (
