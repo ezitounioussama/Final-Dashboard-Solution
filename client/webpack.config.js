@@ -11,9 +11,10 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
-              sourceMap: false, // this line should fix the error
+              sourceMap: false,
             },
           },
+          "postcss-loader", // Add postcss-loader here
         ],
       },
     ],
